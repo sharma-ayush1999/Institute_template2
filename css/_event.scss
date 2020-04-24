@@ -1,0 +1,139 @@
+@include media(tablet-landscape){
+    .event-block--left,.event-block--right{
+        width: 100% !important;
+    }
+}
+@include media(phone){
+    .event-block--right{
+        margin-top: 50px !important;
+    }
+    .event-left--col{
+        top: 104px !important;
+        padding: 0.6em !important;
+    }
+    .event-left--col{
+        button{
+            width: 50% !important;
+        }
+    }
+}
+.event{
+    margin-top: 60px;
+}
+.event-text{
+    h3{
+        @include h3-border();
+        font-size: 1.6em;
+        color: #000;
+        font-weight: 100;
+    }
+    h2{
+        font-size: 2.5em;
+        color: map-get($font-color, fc2 );
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+}
+.event-block{
+    margin-top: 40px;
+}
+.event-block--left{
+    width: 45%;
+    img{
+        width: 100%;
+        height: 400px;
+    }
+}
+.event-block--right{
+    width: 50%;
+    h3{
+        color: map-get($font-color, fc2 );
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+}
+.event-left--col{
+    top: 145px;
+    background: #fff;
+    padding: 1.6em;
+    left: 10px;
+    right: 10px;
+    box-shadow: 0 0 10px #cccccc7a;
+    h3{
+        color: map-get($font-color, fc2 );
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    p{
+        color: rgb(126, 122, 122);
+        margin-bottom: 20px;
+        strong{
+            color: #000;
+            font-weight: bold;
+        }
+    }
+    button{
+        width: 30%;
+        font-size: 1em;
+    }
+    button:hover{
+        @include btn-hover();
+    }
+
+}
+.event-right--down{
+    padding-bottom: 2.5em;
+}
+.event-right--col1{
+    background-color: map-get($background-color, bg6 );
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    border-radius: 6px;
+    text-align: center;
+    height: 61px;
+    h6{
+        font-size: 1.4em;
+    }
+    p{
+        font-size: 1.6em;
+    }
+
+}
+.event-right--col2{
+    width: 88%;
+    border-bottom: 1px solid #f6ecec;
+    padding-bottom: 0.4em;
+    a{
+        color: map-get($font-color, fc2 );
+        font-size: 1.6em;
+    }
+    a:hover{
+        color: map-get($font-color, fc3 );
+    }
+    i{
+        color: map-get($font-color, fc3 );
+        padding: 0.3em;
+        padding-left: 0em;
+        padding-right: 0.3em;
+    }
+    span{
+        color: #000;
+        padding: 0.3em;
+        padding-left: 0em;
+        padding-right: 2em;
+    }
+}
+.event-icons{
+    margin-top: 6px;
+}
+.event-bottom{
+    i,a{
+        color: #000;
+        letter-spacing: 1px;
+    }
+}
+.event-bottom:hover{
+    a,i{
+        color: map-get($font-color, fc3 );
+    }
+}

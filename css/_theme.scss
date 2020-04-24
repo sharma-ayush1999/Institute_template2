@@ -1,0 +1,59 @@
+@include media(tablet-landscape){
+    .theme-left{
+        padding-top: 2em !important;
+        h3{
+            font-size: 1.5em !important;
+            padding-bottom: 0.2em !important;
+            font-weight: bold !important;
+        }
+        p{
+            padding-bottom: 1em !important;
+            font-size: 0.8em !important;
+        }
+        button{
+            width: 40% !important;
+            font-size: 1em;
+        }
+    }
+    .theme-right{
+        width: 40% !important;
+    }
+    .theme-img{
+        height: 250px !important;
+    }
+}
+@include media(phone){
+    .theme-right{
+        display: none !important;
+    }
+    .theme-left{
+        width: 100% !important;
+        padding: 1em !important;
+    }
+}
+.theme{
+    background-color: map-get($background-color, bg2);
+    margin-top: 80px;
+}
+.theme-left{
+    padding-top: 6em;
+    padding-left: 1em;
+    width: 50%;
+    h3{
+        font-size: 2em;
+        padding-bottom: 0.4em;
+        font-weight: bold;
+    }
+    p{
+        padding-bottom: 2em;
+    }
+    button{
+        width: 30%;
+    }
+    button:hover{
+        @include btn-hover();
+    }
+}
+.theme-img{
+    height: 400px;
+}

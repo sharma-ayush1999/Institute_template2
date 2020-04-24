@@ -1,0 +1,147 @@
+@include media(tablet-landscape){
+    .banner{
+        height: 40em !important;
+    }
+    .banner-overlay{
+        height: 40em !important;
+    }
+.banner-content{
+    width: 64% !important;
+       h3{
+           font-size: 1.2em !important;
+           width: 61% !important;
+           left: 28% !important;
+       } 
+       h1{
+           font-size: 3em !important;
+       }
+    }
+    .banner-button{
+        top: 150px !important;
+        left:28% !important;
+    }
+    .banner-icon2 {
+        right: -20% !important;
+    }
+}
+@include media(phone){
+    .banner{
+        height: 30em !important;
+    }
+    .banner-overlay{
+        height: 30em !important;
+    }
+.banner-content{
+    width: 72% !important;
+    top:  171px !important;
+       h3{
+           font-size: 1em !important;
+           width: 70% !important;
+           left: 19% !important;
+           top: -36px !important;
+       } 
+       h1{
+           font-size: 2em !important;
+           
+       }
+       i{
+           font-size: 2em !important;
+       }
+    }
+    .banner-button{
+        top: 104px !important;
+        left:9% !important;
+        width: 100% !important;
+    }
+    .banner-icon2 {
+        top: 43px !important;
+        right: -12% !important;
+    }
+    .banner-icon1 {
+        top: 43px !important;
+    }
+}
+.banner{
+    background-image: url("https://cyclonethemes.com/demo/html/padhai/images/education/slide-4.jpg");
+    width: 100%;
+    height: 50em;
+    z-index: 2;
+}
+.banner-overlay{
+    height: 50em;
+    width: 100%;
+}
+ @mixin h3-border(){
+    font-size: 1.4em;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-left: 4px solid #e9b600;
+    letter-spacing: 3px;
+ }
+.banner-content{
+    width: 71%;
+    top:157px;
+    left: 17%;
+        h3{
+            @include h3-border();
+            top: -34px;
+            width: 37%;
+            left: 38%;
+            
+    }
+    h1{
+        font-size: 5rem;
+        text-align: center;
+    }
+}
+@mixin btn-hover(){
+    background-color: transparent;
+    color: #ffc800;
+    border: 2px solid #ffc800;
+    }
+@mixin btn-hover--white() {
+    background-color: transparent;
+    color: #ffc800;
+    border: 2px solid #fff;
+}
+.banner-button{
+    top: 233px;
+    left:38%;
+    button:nth-child(1){
+        margin-right: 1em;
+    }
+}
+.banner-button1:hover{
+    @include btn-hover--white();
+}
+.banner-button2:hover{
+    @include btn-hover();
+}
+@mixin banner-icon(){
+    font-size: 4em;
+    top: 85px;
+    color: rgb(194, 185, 185);
+}
+.banner-icon1{
+    @include banner-icon();
+    left: -20%;
+}
+.banner-icon2{
+    @include banner-icon();
+    right: -12%;
+}
+.banner-icon{
+    display: none;
+    transition: all 1s ease-in-out;
+}
+.banner:hover{
+    .banner-icon{
+        display: block;
+    }
+}
+.banner-icon:hover{
+    i{
+    color: rgb(63, 54, 104);
+    }
+}

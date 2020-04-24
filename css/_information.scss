@@ -1,0 +1,45 @@
+@include media(tablet-landscape){
+    .information{
+        margin-top: 650px !important;
+    }
+    .info-block{
+        width: 100% !important;
+        margin-bottom: 50px !important;
+    }
+
+}
+@include media(phone){
+    .information{
+        margin-top: 1111px !important;
+    }
+}
+.information{
+    margin-top: 282px;
+}
+.info-img{
+    width: 100%;
+    height: 400px;
+}
+.info-content{
+    flex-wrap: wrap;
+}
+.info-block{
+    width: 50%;
+    h3{
+        @include h3-border();
+        color: #000;
+    }
+    h2{
+        color: map-get($font-color, fc2 );
+        font-size: 2.6em;
+        font-weight: bolder;
+        margin-top: 10px;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 2px;
+    }
+    p{
+        color: #000;
+        margin-top: 25px;
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,123 @@
+@include media(tablet-landscape){
+    .fs-icons{
+        margin-left: 24% !important;
+    }
+    .footer-col2--links{
+        width: 35% !important;
+    }
+    .footer-col2--social{
+        margin-top: 18em !important;
+    }
+}
+@include media(phone){
+    .footer-col,.footer-col2--links,.footer-col2--insta{
+        margin: 0px auto !important;
+        width: 100% !important;
+    }
+    .footer-col1,.footer-col2{
+        padding: 5em !important;
+    }
+    .fs-icons{
+        margin-left: 4% !important;
+        width: 100%;
+    }
+    .footer-col2--social{
+        margin-top:3em !important;
+    }
+}
+.footer{
+    margin-top: 80px;
+    background-color: #000734;
+}
+.footer-col1{
+    background-color: #000734;
+    width: 29%;
+    padding-top: 6em;
+    margin-left: 11%;
+    h2{
+        font-size: 3em;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    h6{
+    padding-top: 6em;
+    padding-bottom: 1em;
+    font-weight: 100;
+
+    }
+}
+.footer-col2{
+    width: 58%;
+    background-color: #202759;
+}
+.footer-list{
+    list-style: none;
+}
+.footer-col2--links{
+    width: 28%;
+    padding-top: 5em;
+    margin-left: 6%;
+    h3{
+        font-size: 1.7em;
+        margin-bottom: 2em;
+    }
+    .h3-border{
+        @include h3-border();
+        top: 106px;
+        width: 23px;
+        left: 4px;
+    }
+    li{
+        margin-bottom: 1em;
+    }
+    li:hover{
+        a{
+            color: rgb(190, 187, 187);
+        }
+    }
+    i{
+        margin-right: 0.6em;
+    }
+}
+.footer-col2--insta{
+    width: 35%;
+    padding-top: 5em;
+    margin-right: 20%;
+    h3{
+        font-size: 1.7em;
+        margin-bottom: 2em;
+    }
+    .h3-border{
+        @include h3-border();
+        top: 106px;
+        width: 23px;
+        left: 4px;
+    }
+}
+.fs-img{
+    width: 32.3%;
+    margin-bottom: 4px;
+}
+.footer-col2--social{
+    width: 100%;
+    height: 47px;
+    margin-bottom:-41px;
+    background-color:#464d6a;
+    i{
+        padding:0.7em 0.7em 0.7em;
+        background-color: #fff;
+        color: map-get($font-color, fc2 );
+        border-radius: 5px;
+        margin-left: 1em;
+    }
+    i:hover{
+        color:map-get($font-color, fc3 )
+    }
+    
+}
+.fs-icons{
+    padding-top: 0.5em;
+    margin-left: 50%;
+    font-size: 1.2em;
+}

@@ -1,0 +1,92 @@
+@import "fontawesome";
+@import "solid";
+@import "regular";
+@import "brands";
+@import "font-family";
+@import "font-color";
+@import "background-color";
+@import "mediaquery";
+@import "button";
+@import "top";
+@import "header";
+@import "banner";
+@import "grid-banner";
+@import "information";
+@import "sch-form";
+@import "course";
+@import "featured-courses";
+@import "why-choose-us";
+@import "event";
+@import "theme";
+@import "teacher";
+@import "testimonial";
+@import "blog";
+@import "online-courses";
+@import "gallery";
+@import "footer";
+
+@include media(tablet-landscape){
+    .top-icon{
+        top: 962px !important;
+    }    
+}
+@include media(phone){
+    .top-icon{
+        top: 751px !important;
+        right: 3% !important;
+    }    
+}
+.top-icon{
+    position: fixed;
+    top:700px;
+    right: 1%;
+    z-index: 100;
+    i{
+        font-size: 3em;
+        color: rgb(78, 86, 148);
+    }
+    i:hover{
+        color: rgb(27, 20, 58);
+    }
+}
+*{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: map-get($font-color, fc1 );
+    margin: 0px;
+    padding: 0px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+._80{
+    width: 80%;
+    margin: 0px auto;
+}
+._20{
+    width: 20%;
+}
+._60{
+    width: 60%;
+}
+._40{
+    width: 40%;
+}
+._50{
+    width: 50%;
+}
+a{
+    text-decoration: none;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.overlay{
+    background-color: #000;
+    opacity: 0.5;
+}

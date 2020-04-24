@@ -1,0 +1,56 @@
+@include media(tablet-landscape){
+    .oc-col{
+        width: 100% !important;
+    }
+    .oc-col1{
+        margin-bottom: 40px;
+    }
+}
+@include media(phone){
+    .oc-col{
+        button{
+            width: 50% !important;
+        }
+    }
+}
+.online-courses{
+    margin-top: 80px;
+}
+.oc-col{
+    width: 48%;
+}
+@mixin online-courses--content() {
+    padding: 4em;
+    padding-top: 5em;
+    padding-right: 1em;
+    padding-left: 3em;
+    h2{
+        font-size: 2.5em;
+        padding-bottom: 0.5em;
+        color: #fff;
+    }
+    p{
+        color: #fff;
+        padding-bottom: 1.5em;
+    }
+    button{
+        width: 36%;
+    }
+    
+}
+.online-courses--content{
+    .oc-col1{
+        background-color:map-get($background-color, bg3 ); 
+        @include online-courses--content();
+        button:hover{
+            @include btn-hover();
+        }
+    }
+    .oc-col2{
+        background-color: black;
+        @include online-courses--content();
+        button:hover{
+            @include btn-hover--white();
+        }
+    }
+}

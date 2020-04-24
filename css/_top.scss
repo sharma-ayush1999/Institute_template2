@@ -1,0 +1,37 @@
+@include media(tablet-landscape){
+    .top{
+        display: none;
+    }
+}
+.top{
+    background-color:map-get($background-color, bg1 ) ;
+    height: 4em;
+}
+.top-left-content{
+    padding: 1em;
+}
+.top-right-content{
+    padding:1em;
+}
+.top-link{
+    color: map-get($font-color, fc1 );
+}
+@mixin border(){
+    border-right: 1px solid #625f5feb;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 8px;
+    padding-bottom: 11px;
+}
+.top-right :nth-of-type(2){
+    a{
+    @include border();
+    border-left: 1px solid #625f5feb;
+    }
+}
+.top-left-content:nth-child(1){
+    border-right: 1px solid #625f5feb;
+    padding-top: 9px;
+    margin-top: 5px;    
+}
+

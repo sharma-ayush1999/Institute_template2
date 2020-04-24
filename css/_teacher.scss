@@ -1,0 +1,89 @@
+@include media(tablet-landscape){
+    .teacher-content{
+        width: 48% !important;
+        margin-bottom: 5em;
+    }
+    .teacher-content--text{
+        top: 77px !important;
+}
+}
+@include media(phone){
+    .teacher-content{
+        width: 100% !important;
+        margin-bottom: 5em;
+    }
+    .teacher-content--text{
+        top: 77px !important;
+}
+}
+.teacher{
+    margin-top: 40px;
+}
+.teacher-left{
+    h3{
+        @include h3-border();
+        color: #000;
+        font-weight:100;
+        letter-spacing: 1px;
+    }
+    h2{
+        font-size: 2em;
+        color: map-get($font-color, fc2 );
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+}
+.teacher-right{
+    margin-top: 40px;
+}
+.teacher-content{
+    height: 260px;
+    width: 23%;
+    border-bottom: 5px solid #ebb400;
+}
+.teacher-content:hover{
+    .teacher-content--text{
+        display: block;
+    }
+}
+.teacher-content--text{
+    display: none;
+    background-color: #fff;
+    top: 56px;
+    padding: 2em;
+    box-shadow: 0px 0px 10px;
+    p{
+        color: rgb(73, 72, 72);
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    i{
+        padding: 0.6em;
+        background-color:map-get($font-color, fc3 );
+        color: #fff;
+        border-radius: 5px;
+    }
+    i:hover{
+        background-color: map-get($background-color, bg2 );
+    }
+}
+.teacher-col{
+    text-align: center;
+    h3{
+        color: #000;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    P{
+        letter-spacing: 1px;
+        color: rgb(134, 130, 130);
+    }
+}
+.teacher-icon{
+    width: 74%;
+    margin: 0px auto;
+}
+.teacher-img{
+    height: 260px;
+    width: 100%;
+}
