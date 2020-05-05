@@ -6573,6 +6573,8 @@ readers do not read off random characters that represent icons */
   padding-left: 39%;
   padding-bottom: 0.4em;
   padding-top: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .course-selection--item h2 {
@@ -6580,6 +6582,8 @@ readers do not read off random characters that represent icons */
   font-size: 1em;
   font-weight: 100;
   letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .course-selection--item:hover i, .course-selection--item:hover h2 {
